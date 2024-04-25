@@ -12,10 +12,10 @@ public class ChessBoard extends Application {
     private static final int BOARD_SIZE = 8;
 
     @Override
+
     public void start(Stage stage) throws Exception {
         GridPane board = new GridPane();
         board.setGridLinesVisible(true);
-
         for (int row = 0; row < BOARD_SIZE; row++) {
             for (int col = 0; col < BOARD_SIZE; col++) {
                 Rectangle rect = new Rectangle();

@@ -1,9 +1,8 @@
 <component name="libraryTable">
-  <library name="Intel">
+  <library name="javafx-jmods-22.0">
     <CLASSES />
     <JAVADOC />
     <NATIVE>
-      <root url="file://$PROJECT_DIR$/../../../../../../Intel" />
       <root url="file://$PROJECT_DIR$/../../JavaFX/javafx-jmods-22.0.1" />
     </NATIVE>
     <SOURCES />
