@@ -24,5 +24,6 @@
             "request": "launch",
             "mainClass": "org.example.chessgame/org.example.chessgame.HelloApplication",
             "projectName": "ChessGame"
+        }
     ]
 }
