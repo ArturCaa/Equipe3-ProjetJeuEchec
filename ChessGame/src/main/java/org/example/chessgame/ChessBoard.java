@@ -21,7 +21,7 @@ public class ChessBoard extends Application {
                 Rectangle rect = new Rectangle();
                 rect.widthProperty().bind(board.widthProperty().divide(BOARD_SIZE));
                 rect.heightProperty().bind(board.heightProperty().divide(BOARD_SIZE));
-                rect.setFill((row + col) % 2 == 0 ? Color.WHITE : Color.BLUE);
+                rect.setFill((row + col) % 2 == 0 ? Color.WHITE : Color.DARKGREEN);
                 board.add(rect, col, row);
             }
         }
