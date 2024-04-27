@@ -1,9 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{}</component>
-  <component name="RunManager">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2ec2e5df-cac2-4455-8ad0-551b14de910c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/cavalier_b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/cavalier_n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/droit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/fou_b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/fou_n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/gauche.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/pion_b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/pion_n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/reine_b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/reine_n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/roi_b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/roi_n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/sablier.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/tour_b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/tour_n.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/ChessBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/ChessBoard.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Mathis1187"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ArturCaa/ProjetEchec-artmath.git",
+    "accountId": "a7014737-530a-46fc-9e8c-2edcc40cf4ed"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2fhHBQJlyQApA5Ysr8vuhrlpRrY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ChessBoard.executor": "Run",
+    "Application.HelloApplication.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/admin/OneDrive - Cégep Marie-Victorin/Documents/GitHub/ProjetEchec-artmath",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\OneDrive - Cégep Marie-Victorin\Documents\GitHub\ProjetEchec-artmath\ChessGame\src\main\resources" />
+      <recent name="C:\Users\admin\OneDrive - Cégep Marie-Victorin\Documents\GitHub\ProjetEchec-artmath\ChessGame\src\main\resources\org\example\demo\Pieces" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ChessBoard">
     <configuration name="ChessBoard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.demo.ChessBoard" />
+      <module name="ChessGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.demo.HelloApplication" />
       <module name="ChessGame" />
       <extension name="coverage">
         <pattern>
@@ -18,7 +107,31 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ChessBoard" />
+        <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ec2e5df-cac2-4455-8ad0-551b14de910c" name="Changes" comment="" />
+      <created>1714246253265</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714246253265</updated>
+      <workItem from="1714246254309" duration="3608000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
