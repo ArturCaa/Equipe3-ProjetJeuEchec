@@ -1,4 +1,4 @@
-module org.example.chessgame {
+module org.example.demo {
     requires javafx.controls;
     requires javafx.fxml;
 
@@ -6,6 +6,6 @@ module org.example.chessgame {
     requires com.dlsc.formsfx;
     requires org.kordamp.bootstrapfx.core;
 
-    opens org.example.chessgame to javafx.fxml;
-    exports org.example.chessgame;
+    opens org.example.demo to javafx.fxml;
+    exports org.example.demo;
 }

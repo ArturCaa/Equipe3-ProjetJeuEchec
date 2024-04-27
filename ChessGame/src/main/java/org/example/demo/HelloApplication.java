@@ -1,4 +1,4 @@
-package org.example.chessgame;
+package org.example.demo;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

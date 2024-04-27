@@ -5,7 +5,5 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="Intel" level="project" />
-    <orderEntry type="library" exported="" name="javafx-jmods-22.0" level="project" />
   </component>
 </module>
