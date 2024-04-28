@@ -5,21 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ec2e5df-cac2-4455-8ad0-551b14de910c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/cavalier_b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/cavalier_n.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/droit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/fou_b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/fou_n.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/gauche.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/pion_b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/pion_n.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/reine_b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/reine_n.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/roi_b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/roi_n.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/sablier.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/tour_b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/resources/org/example/demo/Pieces/tour_n.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/ChessBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/ChessBoard.java" afterDir="false" />
     </list>
@@ -31,22 +16,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Mathis1187"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Mathis1187&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ArturCaa/ProjetEchec-artmath.git",
-    "accountId": "a7014737-530a-46fc-9e8c-2edcc40cf4ed"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ArturCaa/ProjetEchec-artmath.git&quot;,
+    &quot;accountId&quot;: &quot;a7014737-530a-46fc-9e8c-2edcc40cf4ed&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2fhHBQJlyQApA5Ysr8vuhrlpRrY" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -55,22 +40,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ChessBoard.executor": "Run",
-    "Application.HelloApplication.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/admin/OneDrive - Cégep Marie-Victorin/Documents/GitHub/ProjetEchec-artmath",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ChessBoard.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/OneDrive - Cégep Marie-Victorin/Documents/GitHub/ProjetEchec-artmath&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\admin\OneDrive - Cégep Marie-Victorin\Documents\GitHub\ProjetEchec-artmath\ChessGame\src\main\resources" />
@@ -127,7 +112,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714246253265</updated>
-      <workItem from="1714246254309" duration="3608000" />
+      <workItem from="1714246254309" duration="3908000" />
+      <workItem from="1714310397060" duration="2429000" />
     </task>
     <servers />
   </component>
