@@ -8,6 +8,9 @@ import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
+import java.util.Scanner;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 public class ChessBoard extends Application {
     // Tableau
@@ -15,10 +18,25 @@ public class ChessBoard extends Application {
     // Tableau size
     private static final int BOARD_SIZE = 8;
 
+
     @Override
     public void start(Stage primaryStage) throws Exception {
+        // Section pour les noms des utilisateurs
+        VBox userNameSection = new VBox();
+        // Text
+        userNameSection.setSpacing(10);
+        Label player1 = new Label("Nom du joueur 1:");
+        TextField player1TextField = new TextField();
+        Label player2 = new Label("Nom du joueur 2:");
+        TextField player2TextField = new TextField();
+        userNameSection.getChildren().addAll(player1, player1TextField, player2, player2TextField);
+
+        // Organisation des éléments dans la scène principale
+        HBox root = new HBox();
+        root.getChildren().addAll(board, userNameSection);
+
         imgBoard();
-        primaryStage.setScene(new Scene(board, 400, 400));
+        primaryStage.setScene(new Scene(root, 600, 600));
         primaryStage.setTitle("Chess Game");
         primaryStage.show();
     }
