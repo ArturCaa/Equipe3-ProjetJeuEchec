@@ -25,8 +25,10 @@ public class ChessBoard extends Application {
         VBox userNameSection = new VBox();
         // Text
         userNameSection.setSpacing(10);
+        // Joueur 1
         Label player1 = new Label("Nom du joueur 1:");
         TextField player1TextField = new TextField();
+        // Joueur 2
         Label player2 = new Label("Nom du joueur 2:");
         TextField player2TextField = new TextField();
         userNameSection.getChildren().addAll(player1, player1TextField, player2, player2TextField);
@@ -97,13 +99,13 @@ public class ChessBoard extends Application {
                 }
                 // Pions noir
                 else if (row == 1) {
-                    ImageView pionNoire = new ImageView(getClass().getResource("Pieces/pion_n.png").toExternalForm());
-                    stackpane.getChildren().add(pionNoire);
+                    ImageView pion_n = new ImageView(getClass().getResource("Pieces/pion_n.png").toExternalForm());
+                    stackpane.getChildren().add(pion_n);
                 }
                 // Pions blanc
                 else if (row == 6) {
-                    ImageView pionBlanc = new ImageView(getClass().getResource("Pieces/pion_b.png").toExternalForm());
-                    stackpane.getChildren().add(pionBlanc);
+                    ImageView pion_b = new ImageView(getClass().getResource("Pieces/pion_b.png").toExternalForm());
+                    stackpane.getChildren().add(pion_b);
                 }
                 // Tour blanc
                 else if (row == 7 && col == 0) {
