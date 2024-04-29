@@ -2,7 +2,9 @@ package org.example.demo;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
@@ -11,6 +13,7 @@ import javafx.stage.Stage;
 import java.util.Scanner;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Button;
 
 public class ChessBoard extends Application {
     // Tableau
@@ -32,6 +35,11 @@ public class ChessBoard extends Application {
         Label player2 = new Label("Nom du joueur 2:");
         TextField player2TextField = new TextField();
         userNameSection.getChildren().addAll(player1, player1TextField, player2, player2TextField);
+
+        // Button rejouer
+//        Button rejouer = new Button("Rejouer");
+//        StackPane r = new StackPane();
+//        r.getChildren().add(rejouer);
 
         // Organisation des éléments dans la scène principale
         HBox root = new HBox();

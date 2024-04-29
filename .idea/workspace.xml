@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ec2e5df-cac2-4455-8ad0-551b14de910c" name="Changes" comment="" />
+    <list default="true" id="2ec2e5df-cac2-4455-8ad0-551b14de910c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/ChessBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/ChessBoard.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,6 +120,7 @@
       <workItem from="1714334032863" duration="232000" />
       <workItem from="1714399476671" duration="205000" />
       <workItem from="1714399689580" duration="841000" />
+      <workItem from="1714432076599" duration="926000" />
     </task>
     <servers />
   </component>
