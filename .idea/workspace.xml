@@ -5,20 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ec2e5df-cac2-4455-8ad0-551b14de910c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/cases/CaseOccupee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/cases/CaseVide.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/cases/Cases.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/cases/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/pieces/Cavalier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/pieces/Fou.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/pieces/Piece.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/pieces/Pion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/pieces/Reine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/pieces/Roi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/pieces/Tour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/Jeu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/composants/Grille.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/Echiquier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/Joueur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/ChessBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/ChessBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessGame/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChessGame/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/cases/CaseOccupee.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/cases/CaseOccupee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/cases/CaseVide.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/cases/CaseVide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/cases/Cases.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/cases/Cases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/cases/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/cases/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/pieces/Cavalier.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/pieces/Cavalier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/pieces/Fou.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/pieces/Fou.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/pieces/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/pieces/Pion.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/pieces/Pion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/pieces/Reine.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/pieces/Reine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/pieces/Roi.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/pieces/Roi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/pieces/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChessGame/src/main/java/org/example/demo/models/pieces/Tour.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +93,7 @@
       <module name="ChessGame" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.demo.*" />
+          <option name="PATTERN" value="org.example.demo.models.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,7 +106,7 @@
       <module name="ChessGame" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.demo.*" />
+          <option name="PATTERN" value="org.example.demo.models.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,7 +146,7 @@
       <workItem from="1714399689580" duration="841000" />
       <workItem from="1714432076599" duration="3910000" />
       <workItem from="1714493652184" duration="77000" />
-      <workItem from="1714493736629" duration="1224000" />
+      <workItem from="1714493736629" duration="3032000" />
     </task>
     <servers />
   </component>
