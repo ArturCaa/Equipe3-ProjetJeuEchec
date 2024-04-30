@@ -2,22 +2,17 @@ package org.example.demo;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;
-import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
-import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
-import java.util.Scanner;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.control.Button;
 
 public class ChessBoard extends Application {
     // Tableau
-    GridPane board = new GridPane();
+    GridPane echiquier = new GridPane();
     // Tableau size
     private static final int BOARD_SIZE = 8;
 
@@ -43,7 +38,7 @@ public class ChessBoard extends Application {
 
         // Organisation des éléments dans la scène principale
         HBox root = new HBox();
-        root.getChildren().addAll(board, userNameSection);
+        root.getChildren().addAll(echiquier, userNameSection);
 
         imgBoard();
         primaryStage.setScene(new Scene(root, 600, 600));
@@ -60,9 +55,9 @@ public class ChessBoard extends Application {
             for (int col = 0; col < BOARD_SIZE; col++) {
                 StackPane stackpane = new StackPane();
                 stackpane.setBackground((row + col) % 2 == 0 ? white : green);
-                board.add(stackpane, col, row);
-                stackpane.prefWidthProperty().bind(board.widthProperty().divide(BOARD_SIZE));
-                stackpane.prefHeightProperty().bind(board.heightProperty().divide(BOARD_SIZE));
+                echiquier.add(stackpane, col, row);
+                stackpane.prefWidthProperty().bind(echiquier.widthProperty().divide(BOARD_SIZE));
+                stackpane.prefHeightProperty().bind(echiquier.heightProperty().divide(BOARD_SIZE));
 
                 // Ajout des pièces dans l'échiquier
                 // Tour noir
