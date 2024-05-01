@@ -17,8 +17,8 @@ public class Grille {
 
 
     public Grille(Echiquier echiquier) {
-        this.grid = new GridPane();
         this.echiquier = echiquier;
+        this.grid = new GridPane();
         creerGrille();
     }
     public GridPane getGrid() {
