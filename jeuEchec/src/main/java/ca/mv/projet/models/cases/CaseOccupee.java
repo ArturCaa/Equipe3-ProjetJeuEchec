@@ -11,6 +11,7 @@ public class CaseOccupee extends Case {
     public CaseOccupee(Position position, Piece piece) {
         super(position, piece);
         // TODO: remplacer par le code approprié
+
     }
 
     public boolean peutBouger(Position position, Position posDestination, Echiquier echiquier) {
