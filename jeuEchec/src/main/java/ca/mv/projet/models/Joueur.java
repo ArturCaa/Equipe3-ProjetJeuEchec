@@ -1,6 +1,8 @@
 package ca.mv.projet.models;
 
 
+import javafx.scene.control.TextField;
+
 public class Joueur {
     // TODO: ajouter les attributs manquants
     private String nom;

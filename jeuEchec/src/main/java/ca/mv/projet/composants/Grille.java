@@ -14,6 +14,7 @@ public class Grille {
     @FXML
     GridPane grid;
     // TODO: ajouter les attributs manquants
+    
 
 
     public Grille(Echiquier echiquier) {
