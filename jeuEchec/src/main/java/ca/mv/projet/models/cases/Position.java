@@ -1,6 +1,6 @@
-package ca.mv.projet.models.cases;
+package main.java.ca.mv.projet.models.cases;
 
-import ca.mv.projet.Utilities;
+import main.java.ca.mv.projet.Utilities;
 
 public class Position {
     private final int x;

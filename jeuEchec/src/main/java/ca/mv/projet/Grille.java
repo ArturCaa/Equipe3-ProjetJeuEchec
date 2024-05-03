@@ -1,6 +1,6 @@
-package ca.mv.projet;
+package main.java.ca.mv.projet;
 
-import ca.mv.projet.models.Echiquier;
+import main.java.ca.mv.projet.models.Echiquier;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;

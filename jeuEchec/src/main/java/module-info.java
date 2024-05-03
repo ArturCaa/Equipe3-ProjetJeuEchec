@@ -8,7 +8,7 @@ module com.example.demo {
     requires com.almasb.fxgl.all;
 
     opens ca.mv.projet to javafx.fxml;
-    exports ca.mv.projet;
-    exports ca.mv.projet.models;
-    opens ca.mv.projet.models to javafx.fxml;
+    exports main.java.ca.mv.projet;
+    exports main.java.ca.mv.projet.models;
+    opens main.java.ca.mv.projet.models to javafx.fxml;
 }

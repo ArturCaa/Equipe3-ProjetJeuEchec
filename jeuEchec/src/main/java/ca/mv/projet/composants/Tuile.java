@@ -1,7 +1,7 @@
-package ca.mv.projet.composants;
+package main.java.ca.mv.projet.composants;
 
-import ca.mv.projet.models.Echiquier;
-import ca.mv.projet.models.cases.Position;
+import main.java.ca.mv.projet.models.Echiquier;
+import main.java.ca.mv.projet.models.cases.Position;
 import javafx.fxml.FXML;
 import javafx.scene.input.DragEvent;
 import javafx.scene.input.Dragboard;

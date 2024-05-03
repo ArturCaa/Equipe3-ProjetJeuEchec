@@ -1,4 +1,4 @@
-package ca.mv.projet.models.cases;
+package main.java.ca.mv.projet.models.cases;
 
 public class CaseVide extends Case {
 

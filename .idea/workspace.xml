@@ -7,37 +7,35 @@
     <list default="true" id="2ec2e5df-cac2-4455-8ad0-551b14de910c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/ProjetEchec-artmath.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProjetEchec-artmath.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeuEchec/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeuEchec/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeuEchec/.idea/workspace-OLW-S021-00-18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/ApplicationJeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/ApplicationJeu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/Grille.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/Grille.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/Jeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/Jeu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/composants/Grille.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/Utilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/composants/PieceImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/composants/PieceImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/composants/Tuile.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/composants/Tuile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/Echiquier.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/Echiquier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/Joueur.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/Joueur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/cases/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/cases/Case.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/cases/CaseOccupee.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/cases/CaseOccupee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/cases/CaseVide.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/cases/CaseVide.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/cases/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/cases/Position.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/pieces/Cavalier.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/pieces/Cavalier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/cavalier_b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/cavalier_n.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/droit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/fou_b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/fou_n.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/gauche.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/pion_b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/pion_n.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/reine_b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/reine_n.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/roi_b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/roi_n.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/sablier.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/tour_b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/tour_n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/pieces/Fou.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/pieces/Fou.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/pieces/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/pieces/Pion.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/pieces/Pion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/pieces/Reine.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/pieces/Reine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/pieces/Roi.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/pieces/Roi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/pieces/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/pieces/Tour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -84,15 +82,16 @@
     "Application.HelloApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.ide.FileNotInSourceRootChecker.no.check": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/2355173/OneDrive - Cégep Marie-Victorin/Desktop/Cours/session-2/Java/demo3",
+    "last_opened_file_path": "C:/Users/2355173/OneDrive - Cégep Marie-Victorin/Documents/JavaFX",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "advanced.settings",
@@ -140,6 +139,12 @@
       <workItem from="1714738199414" duration="219000" />
       <workItem from="1714738486947" duration="214000" />
       <workItem from="1714741736077" duration="28000" />
+      <workItem from="1714742301346" duration="4000" />
+      <workItem from="1714742328785" duration="8000" />
+      <workItem from="1714742345017" duration="4000" />
+      <workItem from="1714742354472" duration="44000" />
+      <workItem from="1714742448731" duration="945000" />
+      <workItem from="1714743406619" duration="128000" />
     </task>
     <servers />
   </component>
