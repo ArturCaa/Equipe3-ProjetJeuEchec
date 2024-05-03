@@ -1,4 +1,4 @@
-package ca.mv.projet.composants;
+package ca.mv.projet;
 
 import ca.mv.projet.models.Echiquier;
 import javafx.fxml.FXML;
@@ -6,31 +6,23 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 
-import static ca.mv.projet.Utilities.NB_CASES_COTE;
-
 public class Grille {
 
     private final Echiquier echiquier;
     @FXML
     GridPane grid;
     // TODO: ajouter les attributs manquants
-    
-
 
     public Grille(Echiquier echiquier) {
-        this.echiquier = echiquier;
-        this.grid = new GridPane();
         creerGrille();
+        this.echiquier = echiquier;
     }
-    public GridPane getGrid() {
-        return grid;
-    }
+
     private void creerGrille() {
         // TODO: ajouter le code approprié
-        for (int ligne = 0; ligne < NB_CASES_COTE; ligne++) {
+          for (int ligne = 0; ligne < NB_CASES_COTE; ligne++) {
             for (int colonne = 0; colonne < NB_CASES_COTE; colonne++) {
                 StackPane stackPane = new StackPane();
-                stackPane.setStyle("-fx-background-color: " + ((ligne + colonne) % 2 == 0 ? "white" : "darkgreen"));
                 grid.add(stackPane, colonne, ligne);
             }
         }

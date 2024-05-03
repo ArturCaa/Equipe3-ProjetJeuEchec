@@ -19,7 +19,7 @@ public class Echiquier {
 
     private void instancierCasesVides() {
         // TODO: ajouter le code approprié
-        for (int i = 0; i < Utilities.NB_CASES_COTE; i++) {
+         for (int i = 0; i < Utilities.NB_CASES_COTE; i++) {
             for (int j = 0; j < Utilities.NB_CASES_COTE; j++) {
                 plateau[i][j] = new CaseVide(new Position(i, j));
             }
@@ -73,9 +73,9 @@ public class Echiquier {
 
     public void placerReine(){
         plateau[Utilities.PREMIERE_POS][3] = new CaseOccupee(new Position(Utilities.PREMIERE_POS, 3),
-                new Roi(false)); // Reine noire en E1
+                new Reine(false)); // Reine noire en E1
         plateau[Utilities.DERNIERE_POS][3] = new CaseOccupee(new Position(Utilities.DERNIERE_POS, 3),
-                new Roi(true)); // Reine blanche en E8
+                new Reine(true)); // Reine blanche en E8
     }
 
     public void placerCavaliers() {

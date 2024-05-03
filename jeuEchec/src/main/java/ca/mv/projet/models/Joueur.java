@@ -1,19 +1,16 @@
 package ca.mv.projet.models;
 
-
-import javafx.scene.control.TextField;
-
 public class Joueur {
     // TODO: ajouter les attributs manquants
-    private String nom;
+        private String nom;
 
     public Joueur(String nom){
         // TODO: ajouter le code approprié
-        this.nom = nom;
+         this.nom = nom;
     }
 
     // TODO: ajouter les méthodes manquantes
-    public String getNom() {
+       public String getNom() {
         return nom;
     }
     public void setNom(String nom) {

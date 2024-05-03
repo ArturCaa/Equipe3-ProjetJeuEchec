@@ -4,7 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ec2e5df-cac2-4455-8ad0-551b14de910c" name="Changes" comment="" />
+    <list default="true" id="2ec2e5df-cac2-4455-8ad0-551b14de910c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/ProjetEchec-artmath.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProjetEchec-artmath.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/.idea/workspace-OLW-S021-00-18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/Jeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/Jeu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/composants/Grille.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/Echiquier.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/Echiquier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/Joueur.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/Joueur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/cases/CaseOccupee.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/cases/CaseOccupee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/cases/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/cases/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/pieces/Cavalier.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeuEchec/src/main/java/ca/mv/projet/models/pieces/Cavalier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/cavalier_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/cavalier_n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/droit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/fou_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/fou_n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/gauche.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/pion_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/pion_n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/reine_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/reine_n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/roi_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/roi_n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/sablier.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/tour_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeuEchec/src/main/resources/images/pieces/tour_n.png" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +63,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -50,19 +79,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.ChessBoard.executor": "Run",
     "Application.HelloApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/2355173/OneDrive - Cégep Marie-Victorin/Documents/GitHub/dev",
+    "last_opened_file_path": "C:/Users/2355173/OneDrive - Cégep Marie-Victorin/Desktop/Cours/session-2/Java/demo3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "advanced.settings",
@@ -71,6 +101,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\2355173\OneDrive - Cégep Marie-Victorin\Documents\GitHub\dev\jeuEchec\src" />
       <recent name="C:\Users\admin\OneDrive - Cégep Marie-Victorin\Documents\GitHub\ProjetEchec-artmath\ChessGame\src\main\resources" />
       <recent name="C:\Users\admin\OneDrive - Cégep Marie-Victorin\Documents\GitHub\ProjetEchec-artmath\ChessGame\src\main\resources\org\example\demo\Pieces" />
     </key>
@@ -104,6 +135,11 @@
       <workItem from="1714582141893" duration="82000" />
       <workItem from="1714582229905" duration="117000" />
       <workItem from="1714582392977" duration="948000" />
+      <workItem from="1714737701303" duration="257000" />
+      <workItem from="1714737966890" duration="224000" />
+      <workItem from="1714738199414" duration="219000" />
+      <workItem from="1714738486947" duration="214000" />
+      <workItem from="1714741736077" duration="28000" />
     </task>
     <servers />
   </component>
