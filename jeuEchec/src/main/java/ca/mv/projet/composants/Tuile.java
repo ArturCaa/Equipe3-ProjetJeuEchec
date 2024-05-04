@@ -1,14 +1,17 @@
-package main.java.ca.mv.projet.composants;
+package ca.mv.projet.composants;
 
-import main.java.ca.mv.projet.models.Echiquier;
-import main.java.ca.mv.projet.models.cases.Position;
+import ca.mv.projet.models.Echiquier;
+import ca.mv.projet.models.cases.Position;
 import javafx.fxml.FXML;
 import javafx.scene.input.DragEvent;
 import javafx.scene.input.Dragboard;
 import javafx.scene.input.TransferMode;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
+import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
+
+import static ca.mv.projet.Utilities.TAILLE_TUILE;
 
 public class Tuile extends StackPane {
     Echiquier echiquier;
@@ -20,7 +23,9 @@ public class Tuile extends StackPane {
     public Tuile(boolean estCaseBlanche) {
         // TODO: Ajouter le code manquant
         // Créer un réctagle et
+        Rectangle rectangle = creerCaree(estCaseBlanche);
         // ajouter le comme enfant de l'objet courrant
+        getChildren().add(rectangle);
         ajouterEvenementsTuile();
     }
 
@@ -33,10 +38,14 @@ public class Tuile extends StackPane {
     public Rectangle creerCaree(boolean estCaseBlanche) {
         // Todo: Ajouter le code approprié
         // créer le rectangle
+        Rectangle rectangle = new Rectangle();
         // ajuster les dimensions de la tuile
+        rectangle.setWidth(TAILLE_TUILE);
+        rectangle.setHeight(TAILLE_TUILE);
         // remplir la tuile avec la couleur de fond appropriée
+        rectangle.setFill(estCaseBlanche ? Color.WHITE : Color.DARKGREEN);
         // retourner le bon objet
-        return null;
+        return rectangle;
     }
 
     public void ajouterEvenementsTuile() {

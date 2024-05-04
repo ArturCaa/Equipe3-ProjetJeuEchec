@@ -1,4 +1,4 @@
-package main.java.ca.mv.projet;
+package ca.mv.projet;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

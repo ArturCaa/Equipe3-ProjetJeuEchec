@@ -1,8 +1,8 @@
-package main.java.ca.mv.projet.models.cases;
+package ca.mv.projet.models.cases;
 
 
-import main.java.ca.mv.projet.models.Echiquier;
-import main.java.ca.mv.projet.models.pieces.Piece;
+import ca.mv.projet.models.Echiquier;
+import ca.mv.projet.models.pieces.Piece;
 
 public class CaseOccupee extends Case {
 

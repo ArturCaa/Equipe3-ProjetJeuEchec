@@ -1,4 +1,4 @@
-package main.java.ca.mv.projet.composants;
+package ca.mv.projet.composants;
 
 import javafx.beans.binding.DoubleBinding;
 import javafx.beans.binding.DoubleExpression;

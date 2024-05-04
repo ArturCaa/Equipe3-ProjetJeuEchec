@@ -1,7 +1,7 @@
-package main.java.ca.mv.projet;
+package ca.mv.projet;
 
-import main.java.ca.mv.projet.models.Echiquier;
-import main.java.ca.mv.projet.models.Joueur;
+import ca.mv.projet.models.Echiquier;
+import ca.mv.projet.models.Joueur;
 
 public class Jeu {
     // TODO: ajouter le code manquant
