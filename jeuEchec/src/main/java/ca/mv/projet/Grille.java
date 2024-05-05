@@ -13,13 +13,15 @@ import static ca.mv.projet.Utilities.NB_CASES_COTE;
 public class Grille {
 
     private final Echiquier echiquier;
+    private final Jeu jeu;
     @FXML
     GridPane grid;
     // TODO: ajouter les attributs manquants
 
-    public Grille(Echiquier echiquier) {
+    public Grille(Jeu jeu) {
         creerGrille();
-        this.echiquier = echiquier;
+        this.jeu = jeu;
+        this.echiquier = jeu.echiquier;
     }
 
     private void creerGrille() {
@@ -71,4 +73,5 @@ public class Grille {
     }
 
     // TODO: ajouter les méthodes manquantes
+
 }
