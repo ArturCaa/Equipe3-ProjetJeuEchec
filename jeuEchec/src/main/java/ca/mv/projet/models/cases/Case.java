@@ -18,6 +18,7 @@ public abstract class Case {
         this.piece = piece;
     }
 
+
     private void setEstCaseBlanche() {
         this.estCaseBlanche = (position.getX() + position.getY()) % 2 == 0;
     }

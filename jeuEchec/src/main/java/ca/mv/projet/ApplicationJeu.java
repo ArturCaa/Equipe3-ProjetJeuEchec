@@ -19,7 +19,7 @@ public class ApplicationJeu extends Application {
         jeu = new Jeu();
         grille = new Grille(jeu.echiquier);
         grille.dessinerTuiles();
-        //root.getChildren().add(grille.grid);
+        root.getChildren().add(grille.grid);
         Scene scene = new Scene(root, Utilities.SCENE_WIDTH, Utilities.SCENE_HIEGHT);
         stage.setTitle("Jeu d'échec");
         stage.setScene(scene);

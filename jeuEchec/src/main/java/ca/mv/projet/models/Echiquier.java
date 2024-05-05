@@ -120,5 +120,6 @@ public class Echiquier {
 
         return getCaseParPosition(posY, posX);
     }
+
 }
 

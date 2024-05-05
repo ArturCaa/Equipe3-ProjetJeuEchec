@@ -22,7 +22,7 @@ public class Tuile extends StackPane {
 
     public Tuile(boolean estCaseBlanche) {
         // TODO: Ajouter le code manquant
-        // Créer un réctagle et
+        // Créer un réctagle
         Rectangle rectangle = creerCaree(estCaseBlanche);
         // ajouter le comme enfant de l'objet courrant
         getChildren().add(rectangle);
@@ -33,6 +33,9 @@ public class Tuile extends StackPane {
         // TODO: Compléter le code manquant
         // appeler le constructeur à un paramètre
         // initialiser la attributs d'instance
+        this(echiquier.getCaseParPosition(ligne, colonne).isEstCaseBlanche());
+        this.echiquier = echiquier;
+        this.position = new Position(ligne, colonne);
     }
 
     public Rectangle creerCaree(boolean estCaseBlanche) {
