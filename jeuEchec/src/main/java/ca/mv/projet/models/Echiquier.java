@@ -41,7 +41,7 @@ public class Echiquier {
         // Placer la reine
         placerReine();
     }
-    
+
     public void placerPions(){
         for(int i = Utilities.PREMIERE_POS; i < Utilities.NB_CASES_COTE; i++){
             Position positionInitialeBlanc = new Position(1, i);
@@ -88,7 +88,7 @@ public class Echiquier {
         plateau[Utilities.DERNIERE_POS][Utilities.DERNIERE_POS - 1] = new CaseOccupee(new Position(Utilities.DERNIERE_POS, Utilities.DERNIERE_POS - 1),
                 new Cavalier(true)); // Cavalier blanc
     }
-    
+
     public void placerTours(){
         plateau[Utilities.PREMIERE_POS][Utilities.PREMIERE_POS] = new CaseOccupee(new Position(Utilities.PREMIERE_POS, Utilities.PREMIERE_POS),
                 new Tour(false)); // Tour noir en A1
@@ -121,5 +121,19 @@ public class Echiquier {
         return getCaseParPosition(posY, posX);
     }
 
-}
+    public boolean estValidMouve(Position posCourante, Position posDestination){
+        Case caseCourante = getCaseParPosition(posCourante);
+        Case caseDestination = getCaseParPosition(posDestination);
 
+        return peutBouger(caseCourante.getPiece(), posCourante, posDestination)
+                && peutCapturer(caseCourante, caseDestination);
+    }
+
+    public boolean peutCapturer(Case caseCourante, Case caseDestination) {
+        return caseCourante.getPiece().peutCapturer(caseDestination.getPiece());
+    }
+
+    public boolean peutBouger(Piece pieceCourante, Position positionCourante, Position posDestination) {
+        return pieceCourante.peutBouger(positionCourante, posDestination, this);
+    }
+}

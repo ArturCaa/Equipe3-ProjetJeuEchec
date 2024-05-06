@@ -48,8 +48,8 @@ public class Grille {
         // Pour créer la PieceImage vous pouvez utiliser la methode creerPieceImage fournie plus bas
         for (int ligne = 0; ligne < NB_CASES_COTE; ligne++) {
             for (int colonne = 0; colonne < NB_CASES_COTE; colonne++) {
-                Tuile tuile = new Tuile(ligne, colonne, echiquier);
-                grid.add(tuile, colonne - 1, ligne - 1);
+                Tuile tuile = new Tuile(colonne, ligne, jeu);
+                grid.add(tuile, colonne, ligne);
                 Case currentCase = echiquier.getCaseParPosition(ligne, colonne);
                 if (currentCase.getPiece() != null) {
                     creerPieceImage(colonne, ligne, tuile);

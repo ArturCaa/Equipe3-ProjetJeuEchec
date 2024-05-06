@@ -15,12 +15,12 @@ import javafx.scene.shape.Rectangle;
 import static ca.mv.projet.Utilities.TAILLE_TUILE;
 
 public class Tuile extends StackPane {
-    Echiquier echiquier;
+    Jeu jeu;
     Position position;
     static Position posSource;
 
     @FXML
-    PieceImage image;
+    static PieceImage image;
 
     public Tuile(boolean estCaseBlanche) {
         // TODO: Ajouter le code manquant
@@ -36,8 +36,9 @@ public class Tuile extends StackPane {
         // initialiser la attributs d'instance
         this(jeu.estCaseBlanche(ligne, colonne));
         this.position = new Position(ligne, colonne);
-        this.echiquier = jeu.getEchiquier();
+        this.jeu = jeu;
     }
+
 
     public Rectangle creerCaree(boolean estCaseBlanche) {
         // Todo: Ajouter le code approprié
