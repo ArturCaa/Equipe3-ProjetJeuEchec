@@ -39,10 +39,6 @@ public class Tuile extends StackPane {
         this.jeu = jeu;
     }
 
-    public Tuile(int colonne, int ligne, Echiquier echiquier) {
-    }
-
-
     public Rectangle creerCaree(boolean estCaseBlanche) {
         // Todo: Ajouter le code approprié
         // créer le rectangle

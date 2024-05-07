@@ -9,4 +9,6 @@ public class AppController {
     @FXML
     static TextField textFieldjoueur1;
     static TextField textFieldjoueur2;
+
+
 }
