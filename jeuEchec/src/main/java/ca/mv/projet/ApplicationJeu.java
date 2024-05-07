@@ -11,8 +11,7 @@ import javafx.stage.Stage;
 public class ApplicationJeu extends Application {
     Jeu jeu;
     Grille grille;
-    static TextField textFieldjoueur1;
-    static TextField textFieldjoueur2;
+
 
     @Override
     public void start(Stage stage) {

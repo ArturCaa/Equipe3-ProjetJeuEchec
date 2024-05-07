@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
 
-
-<HBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.mv.projet.ApplicationJeu">
-   <children>
-      <TextField promptText="Joueur1" />
-      <TextField promptText="Joueur2" />
-      <Button mnemonicParsing="false" text="Commencer" />
-   </children>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<HBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.mv.projet.AppController">
+  <children>
+    <TextField promptText="Joueur1" />
+    <TextField promptText="Joueur2" />
+    <Button mnemonicParsing="false" text="Commencer" />
+  </children>
 </HBox>
