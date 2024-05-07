@@ -29,6 +29,9 @@ public class Grille {
         for (int ligne = 0; ligne < NB_CASES_COTE; ligne++) {
             for (int colonne = 0; colonne < NB_CASES_COTE; colonne++) {
                 StackPane stackPane = new StackPane();
+//                if (grid != null) {
+//                    grid.add(stackPane, colonne, ligne);
+//                }
                 grid.add(stackPane, colonne, ligne);
             }
         }
@@ -38,6 +41,7 @@ public class Grille {
         // TODO: remplir la grille (grid) avec des tuiles (Tuile)
         //  en bouclant sur les lignes et les colonnes
         // voici le code de la céation d'une tuile
+        // Tuile tuile = new Tuile(i, j, echiquier);
         // TODO : ajouter la tuile à la grille (grid)
         // attention : quand on ajoute un enfant dans un grid on commence par la colonne puis la ligne
         // les lignes et les colonnes dans une grille lors de l'ajout d'enfant commencent par 1
@@ -48,7 +52,10 @@ public class Grille {
         // Pour créer la PieceImage vous pouvez utiliser la methode creerPieceImage fournie plus bas
         for (int ligne = 0; ligne < NB_CASES_COTE; ligne++) {
             for (int colonne = 0; colonne < NB_CASES_COTE; colonne++) {
-                Tuile tuile = new Tuile(colonne, ligne, jeu);
+                Tuile tuile = new Tuile(colonne, ligne, echiquier);
+//                if (grid != null) {
+//                    grid.add(tuile, colonne, ligne);
+//                }
                 grid.add(tuile, colonne, ligne);
                 Case currentCase = echiquier.getCaseParPosition(ligne, colonne);
                 if (currentCase.getPiece() != null) {
