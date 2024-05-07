@@ -2,13 +2,17 @@ package ca.mv.projet;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 
 public class ApplicationJeu extends Application {
     Jeu jeu;
     Grille grille;
+    static TextField textFieldjoueur1;
+    static TextField textFieldjoueur2;
 
     @Override
     public void start(Stage stage) {
