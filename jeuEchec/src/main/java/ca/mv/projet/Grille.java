@@ -29,10 +29,10 @@ public class Grille {
         for (int ligne = 0; ligne < NB_CASES_COTE; ligne++) {
             for (int colonne = 0; colonne < NB_CASES_COTE; colonne++) {
                 StackPane stackPane = new StackPane();
-//                if (grid != null) {
-//                    grid.add(stackPane, colonne, ligne);
-//                }
-                grid.add(stackPane, colonne, ligne);
+                if (grid != null) {
+                    grid.add(stackPane, colonne, ligne);
+                }
+//                grid.add(stackPane, colonne, ligne);
             }
         }
     }
@@ -53,10 +53,10 @@ public class Grille {
         for (int ligne = 0; ligne < NB_CASES_COTE; ligne++) {
             for (int colonne = 0; colonne < NB_CASES_COTE; colonne++) {
                 Tuile tuile = new Tuile(colonne + 1, ligne + 1, jeu);
-//                if (grid != null) {
-//                    grid.add(tuile, colonne, ligne);
-//                }
-                grid.add(tuile, colonne, ligne);
+                if (grid != null) {
+                    grid.add(tuile, colonne, ligne);
+                }
+//                grid.add(tuile, colonne, ligne);
                 Case currentCase = echiquier.getCaseParPosition(ligne, colonne);
                 if (currentCase.getPiece() != null) {
                     creerPieceImage(colonne, ligne, tuile);
