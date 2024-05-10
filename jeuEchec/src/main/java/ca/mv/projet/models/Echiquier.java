@@ -19,7 +19,7 @@ public class Echiquier {
 
     private void instancierCasesVides() {
         // TODO: ajouter le code approprié
-         for (int i = 0; i < Utilities.NB_CASES_COTE; i++) {
+        for (int i = 0; i < Utilities.NB_CASES_COTE; i++) {
             for (int j = 0; j < Utilities.NB_CASES_COTE; j++) {
                 plateau[i][j] = new CaseVide(new Position(i, j));
             }
@@ -41,7 +41,7 @@ public class Echiquier {
         // Placer la reine
         placerReine();
     }
-
+    
     public void placerPions(){
         for(int i = Utilities.PREMIERE_POS; i < Utilities.NB_CASES_COTE; i++){
             Position positionInitialeBlanc = new Position(1, i);
@@ -88,7 +88,7 @@ public class Echiquier {
         plateau[Utilities.DERNIERE_POS][Utilities.DERNIERE_POS - 1] = new CaseOccupee(new Position(Utilities.DERNIERE_POS, Utilities.DERNIERE_POS - 1),
                 new Cavalier(true)); // Cavalier blanc
     }
-
+    
     public void placerTours(){
         plateau[Utilities.PREMIERE_POS][Utilities.PREMIERE_POS] = new CaseOccupee(new Position(Utilities.PREMIERE_POS, Utilities.PREMIERE_POS),
                 new Tour(false)); // Tour noir en A1
@@ -137,3 +137,4 @@ public class Echiquier {
         return pieceCourante.peutBouger(positionCourante, posDestination, this);
     }
 }
+

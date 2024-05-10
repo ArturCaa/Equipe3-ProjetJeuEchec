@@ -2,7 +2,6 @@ package ca.mv.projet.models.cases;
 
 import ca.mv.projet.models.pieces.Piece;
 
-
 public abstract class Case {
     private final Position position;
     private Piece piece;
@@ -17,7 +16,6 @@ public abstract class Case {
         this(position);
         this.piece = piece;
     }
-
 
     private void setEstCaseBlanche() {
         this.estCaseBlanche = (position.getX() + position.getY()) % 2 == 0;

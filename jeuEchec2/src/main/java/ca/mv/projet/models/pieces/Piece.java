@@ -12,7 +12,7 @@ public abstract class Piece {
     public Piece(boolean estBlanc) {
         this.estCapturee = false;
         this.estBlanc = estBlanc;
-        this.image = this.getClass().getSimpleName() + "_" + (estBlanc ? "blanc" : "noir") + ".gif";
+        this.image = this.getClass().getSimpleName() + "_" + (estBlanc ? "b" : "n") + ".png";
     }
 
     public abstract boolean peutBouger(Position position, Position posDestination, Echiquier echiquier);

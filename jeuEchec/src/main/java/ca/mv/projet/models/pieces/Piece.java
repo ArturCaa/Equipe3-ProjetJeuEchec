@@ -3,6 +3,8 @@ package ca.mv.projet.models.pieces;
 import ca.mv.projet.models.Echiquier;
 import ca.mv.projet.models.cases.Position;
 
+import java.util.Locale;
+
 public abstract class Piece {
     protected final boolean estBlanc;
     protected boolean estCapturee = false;
@@ -12,7 +14,7 @@ public abstract class Piece {
     public Piece(boolean estBlanc) {
         this.estCapturee = false;
         this.estBlanc = estBlanc;
-        this.image = this.getClass().getSimpleName() + "_" + (estBlanc ? "blanc" : "noir") + ".gif";
+        this.image = this.getClass().getSimpleName().toLowerCase() + "_" + (estBlanc ? "b" : "n") + ".png";
     }
 
     public abstract boolean peutBouger(Position position, Position posDestination, Echiquier echiquier);
@@ -101,3 +103,4 @@ public abstract class Piece {
                 '}';
     }
 }
+
