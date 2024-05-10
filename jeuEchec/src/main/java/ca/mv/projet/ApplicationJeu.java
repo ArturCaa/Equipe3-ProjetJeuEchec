@@ -1,9 +1,11 @@
 package ca.mv.projet;
 
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -17,6 +19,9 @@ public class ApplicationJeu extends Application {
     Grille grille;
     TextField textFieldjoueur1;
     TextField textFieldjoueur2;
+    @FXML
+    Label label1;
+    Label label2;
 
     @Override
     public void start(Stage stage) throws IOException {
@@ -33,7 +38,13 @@ public class ApplicationJeu extends Application {
         HBox root = (HBox) fxmlLoader.load();
 
         VBox firstVBox = (VBox) root.getChildren().get(0);
-        firstVBox.getChildren().addAll(textFieldjoueur1, textFieldjoueur2);
+        label1 = (Label) firstVBox.getChildren().get(0);
+        label2 = (Label) firstVBox.getChildren().get(2);
+
+        label1.textProperty().bind(textFieldjoueur1.textProperty());
+        textFieldjoueur1.textProperty();
+        label2.textProperty().bind(textFieldjoueur2.textProperty());
+        textFieldjoueur2.textProperty();
 
         jeu = new Jeu();
         grille = new Grille(jeu);
@@ -49,3 +60,4 @@ public class ApplicationJeu extends Application {
         launch();
     }
 }
+

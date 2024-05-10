@@ -15,7 +15,7 @@
   <VBox fx:id="firstVBox" prefHeight="400.0" prefWidth="522.0"/>
   <VBox prefHeight="400.0" prefWidth="393.0" spacing="10.0">
     <children>
-      <Label text="Label"/>
+      <Label fx:id="label1" text="Label"/>
       <GridPane gridLinesVisible="true">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
@@ -32,7 +32,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
         </rowConstraints>
       </GridPane>
-      <Label text="Label"/>
+      <Label fx:id="label2" text="Label"/>
       <GridPane gridLinesVisible="true">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>

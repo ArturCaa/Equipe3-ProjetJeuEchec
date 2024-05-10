@@ -36,7 +36,7 @@ public class Tuile extends StackPane {
         // Note le jeu contien l'echiquier qui lui a des méthodes
         // qui vous permettent de réccupérer la case par ligne et colonne
         // initialiser la attributs d'instance
-        this(estCaseBlanche);
+        this(true);
         this.position = new Position(ligne, colonne);
         this.jeu = jeu;
     }
@@ -47,13 +47,13 @@ public class Tuile extends StackPane {
         // ajuster les dimensions de la tuile
         // remplir la tuile avec la couleur de fond appropriée
         // retourner le bon objet
-        Rectangle rectangle = new Rectangle();
         // ajuster les dimensions de la tuile
+        // remplir la tuile avec la couleur de fond appropriée
+        // retourner le bon objet
+        Rectangle rectangle = new Rectangle();
         rectangle.setWidth(TAILLE_TUILE);
         rectangle.setHeight(TAILLE_TUILE);
-        // remplir la tuile avec la couleur de fond appropriée
         rectangle.setFill(estCaseBlanche ? Color.WHITE : Color.DARKGREEN);
-        // retourner le bon objet
         return rectangle;
     }
 
@@ -68,7 +68,7 @@ public class Tuile extends StackPane {
     }
 
     private void ajouterEvenementsTuileSourisDragged() {
-        if(this.getChildren().size() == 2){
+        if (this.getChildren().size() == 2) {
             image = (PieceImage) this.getChildren().get(1);
         }
         posSource = this.position;
@@ -100,7 +100,7 @@ public class Tuile extends StackPane {
 
             // TODO : Rajoutez la condition : si la tuile courante (this) a 2 enfants donc on enleve le 2eme (pos 1)
             // Remarque : la methode remove par position retourne l'objet enlevé
-                    PieceImage imageMangee = (PieceImage) this.getChildren().remove(1);
+            PieceImage imageMangee = (PieceImage) this.getChildren().remove(1);
 
             this.getChildren().add(image);
             // TODO : appeler setCaseParPosition qui remplace le contenu de la case destination par celui de la case source

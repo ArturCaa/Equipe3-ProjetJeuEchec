@@ -11,10 +11,11 @@ public class CaseOccupee extends Case {
     public CaseOccupee(Position position, Piece piece) {
         super(position, piece);
         // TODO: remplacer par le code approprié
+        this.piece = piece;
     }
 
     public boolean peutBouger(Position position, Position posDestination, Echiquier echiquier) {
         // TODO: remplacer par le code approprié
-        return false;
+        return piece.peutBouger(position, posDestination, echiquier);
     }
 }
