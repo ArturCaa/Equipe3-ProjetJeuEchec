@@ -25,6 +25,8 @@ public class Tuile extends StackPane {
     public Tuile(boolean estCaseBlanche) {
         // TODO: Ajouter le code manquant
         // Créer un réctagle et ajouter le comme enfant de l'objet courrant (this)
+        Rectangle rectangle = creerCaree(estCaseBlanche);
+        this.getChildren().add(rectangle);
         ajouterEvenementsTuile();
     }
 
