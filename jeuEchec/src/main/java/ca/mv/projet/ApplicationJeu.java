@@ -6,6 +6,7 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -30,14 +31,14 @@ public class ApplicationJeu extends Application {
 
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
         HBox root = (HBox) fxmlLoader.load();
-//        root.getChildren().get(0);
 
+        VBox firstVBox = (VBox) root.getChildren().get(0);
+        firstVBox.getChildren().addAll(textFieldjoueur1, textFieldjoueur2);
 
-        //HBox root = new HBox();
         jeu = new Jeu();
         grille = new Grille(jeu);
         grille.dessinerTuiles();
-        root.getChildren().add(grille.grid);
+        firstVBox.getChildren().add(grille.grid);
         Scene scene = new Scene(root, Utilities.SCENE_WIDTH, Utilities.SCENE_HIEGHT);
         stage.setTitle("Jeu d'échec");
         stage.setScene(scene);

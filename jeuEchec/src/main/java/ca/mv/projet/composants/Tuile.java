@@ -36,6 +36,9 @@ public class Tuile extends StackPane {
         // Note le jeu contien l'echiquier qui lui a des méthodes
         // qui vous permettent de réccupérer la case par ligne et colonne
         // initialiser la attributs d'instance
+        this(estCaseBlanche);
+        this.position = new Position(ligne, colonne);
+        this.jeu = jeu;
     }
 
     public Rectangle creerCaree(boolean estCaseBlanche) {
