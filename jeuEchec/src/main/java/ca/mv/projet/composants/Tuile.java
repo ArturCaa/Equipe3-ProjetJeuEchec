@@ -36,7 +36,8 @@ public class Tuile extends StackPane {
         // Note le jeu contien l'echiquier qui lui a des méthodes
         // qui vous permettent de réccupérer la case par ligne et colonne
         // initialiser la attributs d'instance
-        this(true);
+        boolean estCaseBlanche = (ligne + colonne) % 2 == 0;
+        this(estCaseBlanche);
         this.position = new Position(ligne, colonne);
         this.jeu = jeu;
     }
@@ -50,10 +51,12 @@ public class Tuile extends StackPane {
         // ajuster les dimensions de la tuile
         // remplir la tuile avec la couleur de fond appropriée
         // retourner le bon objet
-        Rectangle rectangle = new Rectangle();
-        rectangle.setWidth(TAILLE_TUILE);
-        rectangle.setHeight(TAILLE_TUILE);
-        rectangle.setFill(estCaseBlanche ? Color.WHITE : Color.DARKGREEN);
+        Rectangle rectangle = new Rectangle(TAILLE_TUILE, TAILLE_TUILE);
+        if (estCaseBlanche) {
+            rectangle.setFill(Color.WHITE);
+        } else {
+            rectangle.setFill(Color.DARKGREEN);
+        }
         return rectangle;
     }
 
