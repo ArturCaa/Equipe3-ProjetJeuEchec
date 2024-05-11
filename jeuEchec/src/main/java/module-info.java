@@ -6,6 +6,7 @@ module com.example.demo {
     requires com.dlsc.formsfx;
     requires org.kordamp.bootstrapfx.core;
     requires com.almasb.fxgl.all;
+    requires java.desktop;
 
     opens ca.mv.projet to javafx.fxml;
     exports ca.mv.projet;

@@ -12,6 +12,8 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.beans.binding.Bindings;
 
+
+import java.awt.*;
 import java.io.IOException;
 
 
@@ -46,6 +48,7 @@ public class ApplicationJeu extends Application {
 
         label1.textProperty().bind(textFieldJoueur1.textProperty());
         label2.textProperty().bind(textFieldJoueur2.textProperty());
+
 
         Scene scene = new Scene(root, Utilities.SCENE_WIDTH, Utilities.SCENE_HIEGHT);
         stage.setTitle("Jeu d'échec");
