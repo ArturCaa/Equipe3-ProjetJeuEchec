@@ -13,7 +13,6 @@ public class Reine extends Piece {
     public boolean peutBouger(Position posCourante, Position posDestination, Echiquier echiquier) {
         // TODO: remplacer par le code approprié
         int direction = estBlanc ? -1 : 1;
-
         System.out.println("peutBouger reine");
         return true;
     }

@@ -21,7 +21,7 @@ public class Position {
 
     public boolean estValide() {
         // TODO: implémenter valeurs entre 0 et 7
-        return false;
+        return x >= 0 && x < Utilities.NB_CASES_COTE && y >= 0 && y < Utilities.NB_CASES_COTE;
     }
 
     public int convertirEnIndex(){
