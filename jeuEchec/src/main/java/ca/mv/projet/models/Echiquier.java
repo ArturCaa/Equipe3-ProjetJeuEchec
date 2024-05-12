@@ -136,5 +136,6 @@ public class Echiquier {
     public boolean peutBouger(Piece pieceCourante, Position positionCourante, Position posDestination) {
         return pieceCourante.peutBouger(positionCourante, posDestination, this);
     }
+
 }
 

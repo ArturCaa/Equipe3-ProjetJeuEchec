@@ -1,5 +1,9 @@
 package ca.mv.projet;
 
+import ca.mv.projet.models.Echiquier;
+import ca.mv.projet.models.cases.Position;
+import ca.mv.projet.models.pieces.Piece;
+import ca.mv.projet.models.pieces.Pion;
 import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -54,6 +58,7 @@ public class ApplicationJeu extends Application {
         stage.setTitle("Jeu d'échec");
         stage.setScene(scene);
         stage.show();
+
     }
 
     public static void main(String[] args) {

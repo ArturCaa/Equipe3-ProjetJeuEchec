@@ -104,7 +104,10 @@ public class Tuile extends StackPane {
 
             // TODO : Rajoutez la condition : si la tuile courante (this) a 2 enfants donc on enleve le 2eme (pos 1)
             // Remarque : la methode remove par position retourne l'objet enlevé
-            PieceImage imageMangee = (PieceImage) this.getChildren().remove(1);
+            if(this.getChildren().size()==2){
+                PieceImage imageMangee = (PieceImage) this.getChildren().remove(1);
+            }
+
 
             this.getChildren().add(image);
             // TODO : appeler setCaseParPosition qui remplace le contenu de la case destination par celui de la case source
