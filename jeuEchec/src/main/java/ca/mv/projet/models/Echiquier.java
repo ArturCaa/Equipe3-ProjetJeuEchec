@@ -18,7 +18,6 @@ public class Echiquier {
     }
 
     private void instancierCasesVides() {
-        // TODO: ajouter le code approprié
         for (int i = 0; i < Utilities.NB_CASES_COTE; i++) {
             for (int j = 0; j < Utilities.NB_CASES_COTE; j++) {
                 plateau[i][j] = new CaseVide(new Position(i, j));
@@ -121,13 +120,14 @@ public class Echiquier {
         return getCaseParPosition(posY, posX);
     }
 
-    public boolean estValidMouve(Position posCourante, Position posDestination){
+    public boolean estValidMouve(Position posCourante, Position posDestination) {
         Case caseCourante = getCaseParPosition(posCourante);
         Case caseDestination = getCaseParPosition(posDestination);
 
         return peutBouger(caseCourante.getPiece(), posCourante, posDestination)
                 && peutCapturer(caseCourante, caseDestination);
     }
+
 
     public boolean peutCapturer(Case caseCourante, Case caseDestination) {
         return caseCourante.getPiece().peutCapturer(caseDestination.getPiece());

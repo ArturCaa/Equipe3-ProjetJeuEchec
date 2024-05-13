@@ -12,8 +12,12 @@ public class Reine extends Piece {
     @Override
     public boolean peutBouger(Position posCourante, Position posDestination, Echiquier echiquier) {
         // TODO: remplacer par le code approprié
-        int direction = estBlanc ? -1 : 1;
-        System.out.println("peutBouger reine");
-        return true;
+//        int direction = estBlanc ? -1 : 1;
+//        System.out.println("peutBouger reine");
+//        return true;
+        if (estSurDiagonal(posCourante, posDestination) || posCourante.getX() == posDestination.getX() || posCourante.getY() == posDestination.getY()) {
+            return bougerSurDiagonal(posCourante, posDestination, echiquier) || bougerSurOrthogonal(posCourante, posDestination, echiquier);
+        }
+        return false;
     }
 }

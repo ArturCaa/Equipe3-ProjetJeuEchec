@@ -6,5 +6,4 @@ public class CaseVide extends Case {
         super(position);
     }
 
-
 }
