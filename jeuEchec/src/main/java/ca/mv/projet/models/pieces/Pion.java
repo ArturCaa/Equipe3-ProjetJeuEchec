@@ -58,6 +58,7 @@ public class Pion extends Piece {
         return estDeplacLegalSurX && estDeplacLegalSurY;
     }
 
+    //Optionnel
     public Piece promouvoir(String type) {
         // TODO: remplacer par le code approprié
         // Retourne une nouvelle pièce (Reine, par exemple) en cas de promotion

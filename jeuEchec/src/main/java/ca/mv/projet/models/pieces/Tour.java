@@ -10,7 +10,13 @@ public class Tour extends Piece {
 
     @Override
     public boolean peutBouger(Position posCourante, Position posDestination, Echiquier echiquier) {
-        System.out.println("peutBouger tout");
-        return true;
+
+        if(posCourante.getX() == posDestination.getX() || posCourante.getY() == posDestination.getY()){
+            bougerSurOrthogonal(posCourante, posDestination,echiquier);
+            return true;
+        }
+
+        System.out.println("peutBouger ne peut pas bouger");
+        return false;
     }
 }
