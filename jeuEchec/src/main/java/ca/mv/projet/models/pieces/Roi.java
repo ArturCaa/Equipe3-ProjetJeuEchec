@@ -14,8 +14,9 @@ public class Roi extends Piece {
         int diffY = Math.abs(posDestination.getY() - posCourante.getY());
 
         if ((diffX <= 1 && diffY == 0) || (diffY <= 1 && diffX == 0) || (diffX <= 1 && diffY <= 1)) {
-            Piece pieceDestination = echiquier.getCaseParPosition(posDestination).getPiece();
-            if (pieceDestination == null || pieceDestination.estBlanc != this.estBlanc){
+            if (estSurDiagonal(posCourante, posDestination) || posCourante.getX() == posDestination.getX() || posCourante.getY() == posDestination.getY()) {
+                bougerSurDiagonal(posCourante, posDestination, echiquier);
+                bougerSurOrthogonal(posCourante, posDestination, echiquier);
                 return true;
             }
         }

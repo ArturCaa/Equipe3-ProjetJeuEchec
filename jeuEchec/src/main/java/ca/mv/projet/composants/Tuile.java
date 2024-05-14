@@ -86,6 +86,7 @@ public class Tuile extends StackPane {
             // Si valide, déplacez la pièce ici
 
 
+
             // TODO : Rajoutez la condition : si la tuile courante (this) a 2 enfants donc on enleve le 2eme (pos 1)
             // Remarque : la methode remove par position retourne l'objet enlevé
             if(this.getChildren().size()==2){
