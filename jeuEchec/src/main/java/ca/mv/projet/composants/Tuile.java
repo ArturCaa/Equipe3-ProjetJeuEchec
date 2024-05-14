@@ -22,6 +22,8 @@ public class Tuile extends StackPane {
     @FXML
     static PieceImage image;
 
+    Echiquier echiquier = new Echiquier();
+
     public Tuile(boolean estCaseBlanche) {
         Rectangle rectangle = creerCaree(estCaseBlanche);
         this.getChildren().add(rectangle);
@@ -84,6 +86,9 @@ public class Tuile extends StackPane {
             //  le cas de case destination contenant une piece (manger la piece)
             // Logique pour vérifier le mouvement valide
             // Si valide, déplacez la pièce ici
+           if (echiquier.estValidMouve(position, posSource)){
+               echiquier.setCaseParPosition(position, posSource);
+           }
 
 
 
