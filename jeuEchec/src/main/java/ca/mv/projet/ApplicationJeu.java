@@ -65,19 +65,19 @@ public class ApplicationJeu extends Application {
 
         // Position de départ et d'arrivée pour tester la tour
         Position posCourante = new Position(0, 0); // Position de départ
-        Position posDestination = new Position(1,0 ); // Position d'arrivée
+        Position posDestination = new Position(0,1 ); // Position d'arrivée
 
         // Création d'une tour
-        Fou fou = new Fou(true); // Tour blanche
+        Roi roi = new Roi(true); // Tour blanche
 
         // Appel de la méthode peutBouger pour la tour
-        boolean peutBouger = fou.peutBouger(posCourante, posDestination, echiquier);
+        boolean peutBouger = roi.peutBouger(posCourante, posDestination, echiquier);
 
         // Affichage du résultat
         if (peutBouger) {
-            System.out.println("Le tour peut bouger sur la case de destination.");
+            System.out.println("Le roi peut bouger sur la case de destination.");
         } else {
-            System.out.println("La tour ne peut pas bouger sur la case de destination.");
+            System.out.println("La roi ne peut pas bouger sur la case de destination.");
         }
 
         launch();
