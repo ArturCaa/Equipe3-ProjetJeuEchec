@@ -17,6 +17,7 @@ public class Jeu {
         this.joueur2 = new Joueur("Joueur 2");
 
         }
-    }
+
+}
 
 

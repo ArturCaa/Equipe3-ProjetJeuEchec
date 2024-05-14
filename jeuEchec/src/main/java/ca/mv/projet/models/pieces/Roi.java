@@ -10,10 +10,15 @@ public class Roi extends Piece {
 
     @Override
     public boolean peutBouger(Position posCourante, Position posDestination, Echiquier echiquier) {
-        // TODO: remplacer par le code approprié
-        // Implémenter la logique spécifique du déplacement du Roi
-        System.out.println("peutBouger roi");
-        return true;
+        int diffX = Math.abs(posDestination.getX() - posCourante.getX());
+        int diffY = Math.abs(posDestination.getY() - posCourante.getY());
+
+        if ((diffX <= 1 && diffY == 0) || (diffY <= 1 && diffX == 0) || (diffX <= 1 && diffY <= 1)) {
+            Piece pieceDestination = echiquier.getCaseParPosition(posDestination).getPiece();
+            return pieceDestination == null || pieceDestination.estBlanc != this.estBlanc;
+        }
+        return false;
     }
 }
+
 

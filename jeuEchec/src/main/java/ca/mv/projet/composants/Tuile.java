@@ -127,4 +127,3 @@ public class Tuile extends StackPane {
 
     }
 }
-

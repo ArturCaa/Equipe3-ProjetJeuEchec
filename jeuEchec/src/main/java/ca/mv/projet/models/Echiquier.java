@@ -124,9 +124,21 @@ public class Echiquier {
         Case caseCourante = getCaseParPosition(posCourante);
         Case caseDestination = getCaseParPosition(posDestination);
 
-        return peutBouger(caseCourante.getPiece(), posCourante, posDestination)
-                && peutCapturer(caseCourante, caseDestination);
+        if (!(caseCourante instanceof CaseOccupee)) {
+            return false;
+        }
+
+        Piece pieceCourante = ((CaseOccupee) caseCourante).getPiece();
+
+        if (caseDestination instanceof CaseOccupee) {
+            Piece pieceDestination = ((CaseOccupee) caseDestination).getPiece();
+            if (pieceDestination.isEstBlanc() == pieceCourante.isEstBlanc()) {
+                return false;
+            }
+        }
+        return peutBouger(pieceCourante, posCourante, posDestination);
     }
+
 
 
     public boolean peutCapturer(Case caseCourante, Case caseDestination) {
@@ -136,6 +148,8 @@ public class Echiquier {
     public boolean peutBouger(Piece pieceCourante, Position positionCourante, Position posDestination) {
         return pieceCourante.peutBouger(positionCourante, posDestination, this);
     }
+
+
 
 }
 
