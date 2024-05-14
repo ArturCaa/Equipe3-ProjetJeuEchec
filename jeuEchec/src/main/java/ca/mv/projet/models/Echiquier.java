@@ -120,25 +120,13 @@ public class Echiquier {
         return getCaseParPosition(posY, posX);
     }
 
-    public boolean estValidMouve(Position posCourante, Position posDestination) {
+    public boolean estValidMouve(Position posCourante, Position posDestination){
         Case caseCourante = getCaseParPosition(posCourante);
         Case caseDestination = getCaseParPosition(posDestination);
 
-        if (!(caseCourante instanceof CaseOccupee)) {
-            return false;
-        }
-
-        Piece pieceCourante = ((CaseOccupee) caseCourante).getPiece();
-
-        if (caseDestination instanceof CaseOccupee) {
-            Piece pieceDestination = ((CaseOccupee) caseDestination).getPiece();
-            if (pieceDestination.isEstBlanc() == pieceCourante.isEstBlanc()) {
-                return false;
-            }
-        }
-        return peutBouger(pieceCourante, posCourante, posDestination);
+        return peutBouger(caseCourante.getPiece(), posCourante, posDestination)
+                && peutCapturer(caseCourante, caseDestination);
     }
-
 
 
     public boolean peutCapturer(Case caseCourante, Case caseDestination) {
