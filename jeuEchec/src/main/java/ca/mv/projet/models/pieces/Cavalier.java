@@ -13,9 +13,9 @@ public class Cavalier extends Piece {
     public boolean peutBouger(Position posCourante, Position posDestination, Echiquier echiquier) {
         // TODO: remplacer par le code approprié
 
-        int diffSurX = Math.abs(posDestination.getX() - posCourante.getX());
-        int diffSurY = Math.abs(posDestination.getY() - posCourante.getY());
-        if ((diffSurX == 2 && diffSurY == 1) || (diffSurX == 1 && diffSurY == 2)){
+        int pasX = Math.abs(posDestination.getX() - posCourante.getX());
+        int pasY = Math.abs(posDestination.getY() - posCourante.getY());
+        if ((pasX == 2 && pasY == 1) || (pasX == 1 && pasY == 2)){
             return true;
         }
         System.out.println("Le chevalier ne peut pas bouger");

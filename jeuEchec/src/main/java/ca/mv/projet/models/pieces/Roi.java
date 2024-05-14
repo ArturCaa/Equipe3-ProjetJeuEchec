@@ -15,8 +15,11 @@ public class Roi extends Piece {
 
         if ((diffX <= 1 && diffY == 0) || (diffY <= 1 && diffX == 0) || (diffX <= 1 && diffY <= 1)) {
             Piece pieceDestination = echiquier.getCaseParPosition(posDestination).getPiece();
-            return pieceDestination == null || pieceDestination.estBlanc != this.estBlanc;
+            if (pieceDestination == null || pieceDestination.estBlanc != this.estBlanc){
+                return true;
+            }
         }
+        System.out.println("Le roi ne peut pas bouger");
         return false;
     }
 }
