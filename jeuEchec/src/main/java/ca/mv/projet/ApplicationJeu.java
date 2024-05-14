@@ -68,10 +68,10 @@ public class ApplicationJeu extends Application {
         Position posDestination = new Position(1,0 ); // Position d'arrivée
 
         // Création d'une tour
-        Roi roi = new Roi(true); // Tour blanche
+        Fou fou = new Fou(true); // Tour blanche
 
         // Appel de la méthode peutBouger pour la tour
-        boolean peutBouger = roi.peutBouger(posCourante, posDestination, echiquier);
+        boolean peutBouger = fou.peutBouger(posCourante, posDestination, echiquier);
 
         // Affichage du résultat
         if (peutBouger) {

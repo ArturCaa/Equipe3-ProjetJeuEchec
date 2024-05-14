@@ -14,8 +14,10 @@ public class Fou extends Piece {
     public boolean peutBouger(Position posCourante, Position posDestination, Echiquier echiquier) {
         // Vérifiez d'abord si la destination est sur la même diagonale que la position actuelle du fou
         if (estSurDiagonal(posCourante, posDestination)) {
+            bougerSurDiagonal(posCourante, posDestination, echiquier);
             return true;
         }
+        System.out.println("Le fou ne peut pas bouger");
         return false;
     }
 
