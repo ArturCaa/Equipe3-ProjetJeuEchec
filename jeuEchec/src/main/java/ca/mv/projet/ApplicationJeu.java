@@ -2,6 +2,7 @@ package ca.mv.projet;
 
 import ca.mv.projet.models.Echiquier;
 import ca.mv.projet.models.cases.Position;
+import ca.mv.projet.models.pieces.Cavalier;
 import ca.mv.projet.models.pieces.Piece;
 import ca.mv.projet.models.pieces.Pion;
 import javafx.application.Application;
@@ -62,6 +63,25 @@ public class ApplicationJeu extends Application {
     }
 
     public static void main(String[] args) {
+        Echiquier echiquier = new Echiquier();
+
+        // Position de départ et d'arrivée pour tester la tour
+        Position posCourante = new Position(0, 2); // Position de départ
+        Position posDestination = new Position(2, 2); // Position d'arrivée
+
+        // Création d'une tour
+        Cavalier tour = new Cavalier(true); // Tour blanche
+
+        // Appel de la méthode peutBouger pour la tour
+        boolean peutBouger = tour.peutBouger(posCourante, posDestination, echiquier);
+
+        // Affichage du résultat
+        if (peutBouger) {
+            System.out.println("La tour peut bouger sur la case de destination.");
+        } else {
+            System.out.println("La tour ne peut pas bouger sur la case de destination.");
+        }
+
         launch();
     }
 }

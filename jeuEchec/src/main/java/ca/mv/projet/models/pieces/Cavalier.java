@@ -12,11 +12,13 @@ public class Cavalier extends Piece {
     @Override
     public boolean peutBouger(Position posCourante, Position posDestination, Echiquier echiquier) {
         // TODO: remplacer par le code approprié
-//        System.out.println("peutBouger cavalier");
-//        return true;
+
         int diffSurX = Math.abs(posDestination.getX() - posCourante.getX());
         int diffSurY = Math.abs(posDestination.getY() - posCourante.getY());
-
-        return (diffSurX == 2 && diffSurY == 1) || (diffSurX == 1 && diffSurY == 2);
+        if ((diffSurX == 2 && diffSurY == 1) || (diffSurX == 1 && diffSurY == 2)){
+            return true;
+        }
+        System.out.println("Le chevalier ne peut pas bouger");
+        return false;
     }
 }
