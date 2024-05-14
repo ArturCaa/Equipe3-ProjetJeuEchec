@@ -23,19 +23,12 @@ public class Tuile extends StackPane {
     static PieceImage image;
 
     public Tuile(boolean estCaseBlanche) {
-        // TODO: Ajouter le code manquant
-        // Créer un réctagle et ajouter le comme enfant de l'objet courrant (this)
         Rectangle rectangle = creerCaree(estCaseBlanche);
         this.getChildren().add(rectangle);
         ajouterEvenementsTuile();
     }
 
     public Tuile(int ligne, int colonne, Jeu jeu) {
-        // TODO: Compléter le code manquant
-        // appeler le constructeur à un paramètre
-        // Note le jeu contien l'echiquier qui lui a des méthodes
-        // qui vous permettent de réccupérer la case par ligne et colonne
-        // initialiser la attributs d'instance
         boolean estCaseBlanche = (ligne + colonne) % 2 == 0;
         this(estCaseBlanche);
         this.position = new Position(ligne, colonne);
@@ -43,14 +36,6 @@ public class Tuile extends StackPane {
     }
 
     public Rectangle creerCaree(boolean estCaseBlanche) {
-        // Todo: Ajouter le code approprié
-        // créer le rectangle
-        // ajuster les dimensions de la tuile
-        // remplir la tuile avec la couleur de fond appropriée
-        // retourner le bon objet
-        // ajuster les dimensions de la tuile
-        // remplir la tuile avec la couleur de fond appropriée
-        // retourner le bon objet
         Rectangle rectangle = new Rectangle(TAILLE_TUILE, TAILLE_TUILE);
         if (estCaseBlanche) {
             rectangle.setFill(Color.WHITE);

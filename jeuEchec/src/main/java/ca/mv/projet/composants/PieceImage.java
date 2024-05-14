@@ -15,7 +15,6 @@ public class PieceImage extends ImageView {
         creerImageView(imgUrl, imageMargin);
 
         setOnDragDetected(event -> {
-            // Todo: remplacer par le code approprié
             Dragboard db = startDragAndDrop(TransferMode.MOVE);
             ClipboardContent content = new ClipboardContent();
             content.putImage(getImage());

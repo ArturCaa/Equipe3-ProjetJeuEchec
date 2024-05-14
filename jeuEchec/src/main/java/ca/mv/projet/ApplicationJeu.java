@@ -31,9 +31,6 @@ public class ApplicationJeu extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        // TODO: compléter et remplacer par le code approprié
-        //  pour ajouter toutes les composantes de la scene
-        //  décommenter le code en commentaire au bon moment pour que le code compile
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
         HBox root = (HBox) fxmlLoader.load();
 

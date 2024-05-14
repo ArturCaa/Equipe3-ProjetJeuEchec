@@ -11,7 +11,6 @@ public class Cavalier extends Piece {
 
     @Override
     public boolean peutBouger(Position posCourante, Position posDestination, Echiquier echiquier) {
-        // TODO: remplacer par le code approprié
 
         int pasX = Math.abs(posDestination.getX() - posCourante.getX());
         int pasY = Math.abs(posDestination.getY() - posCourante.getY());

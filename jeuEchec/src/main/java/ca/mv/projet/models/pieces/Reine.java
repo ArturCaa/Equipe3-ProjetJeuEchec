@@ -11,7 +11,6 @@ public class Reine extends Piece {
 
     @Override
     public boolean peutBouger(Position posCourante, Position posDestination, Echiquier echiquier) {
-        // TODO: remplacer par le code approprié
         if (estSurDiagonal(posCourante, posDestination) || posCourante.getX() == posDestination.getX() || posCourante.getY() == posDestination.getY()) {
             bougerSurDiagonal(posCourante, posDestination, echiquier);
             bougerSurOrthogonal(posCourante, posDestination, echiquier);
