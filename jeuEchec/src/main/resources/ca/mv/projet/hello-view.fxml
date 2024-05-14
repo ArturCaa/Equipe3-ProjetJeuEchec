@@ -10,6 +10,7 @@
       <HBox>
         <TextField fx:id="textFieldJoueur1" maxWidth="160" promptText="Joueur1" />
         <TextField fx:id="textFieldJoueur2" maxWidth="160" promptText="Joueur2" />
+            <Button fx:id="resetButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Restart" />
       </HBox>
     </children>
   </VBox>
