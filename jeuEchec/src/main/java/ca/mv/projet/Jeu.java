@@ -20,14 +20,14 @@ public class Jeu {
         this.tours = 0;
     }
 
-    public String getCouleur(){
-        if(tours % 2 == 0){
-
-        }
-        else {
-            
-        }
-    }
+//    public String getCouleur(){
+//        if(tours % 2 == 0){
+//
+//        }
+//        else {
+//
+//        }
+//    }
 
     public void passerTour(){
         tours++;
