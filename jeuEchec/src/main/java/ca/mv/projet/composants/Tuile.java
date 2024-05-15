@@ -2,7 +2,9 @@ package ca.mv.projet.composants;
 
 import ca.mv.projet.Jeu;
 import ca.mv.projet.models.Echiquier;
+import ca.mv.projet.models.Joueur;
 import ca.mv.projet.models.cases.Position;
+import ca.mv.projet.models.pieces.Piece;
 import javafx.fxml.FXML;
 import javafx.scene.input.DragEvent;
 import javafx.scene.input.Dragboard;
@@ -82,26 +84,28 @@ public class Tuile extends StackPane {
     public void ajouterEvenementsTuileDragDrop(DragEvent event) {
         Dragboard db = event.getDragboard();
         if (db.hasImage()) {
-            // TODO: modifier le code et ajouter la gestion des cases et
-            //  le cas de case destination contenant une piece (manger la piece)
-            // Logique pour vérifier le mouvement valide
-            // Si valide, déplacez la pièce ici
-           if (echiquier.estValidMouve(position, posSource)){
-               echiquier.setCaseParPosition(position, posSource);
-           }
+            Joueur playerActuel = jeu.joueurActuel();
+            if ((playerActuel.isJoueurEstBlanc() && image.getPiece().isEstBlanc()) || (!playerActuel.isJoueurEstBlanc() && !image.getPiece().isEstBlanc())){
+                if (echiquier.estValidMouve(position, posSource)){
+                    echiquier.setCaseParPosition(position, posSource);
+                    jeu.passerTour();
+                }
+                else {
+                    System.out.println("Le mouvement est invalid");
+                }
 
+                if(this.getChildren().size()==2){
+                    PieceImage imageMangee = (PieceImage) this.getChildren().remove(1);
+                }
 
-
-            // TODO : Rajoutez la condition : si la tuile courante (this) a 2 enfants donc on enleve le 2eme (pos 1)
-            // Remarque : la methode remove par position retourne l'objet enlevé
-            if(this.getChildren().size()==2){
-                PieceImage imageMangee = (PieceImage) this.getChildren().remove(1);
+                this.getChildren().add(image);
+                // TODO : appeler setCaseParPosition qui remplace le contenu de la case destination par celui de la case source
+                // et met la case source a une case vide
+                event.setDropCompleted(true);
+            } else {
+                event.setDropCompleted(false);
             }
 
-            this.getChildren().add(image);
-            // TODO : appeler setCaseParPosition qui remplace le contenu de la case destination par celui de la case source
-            // et met la case source a une case vide
-            event.setDropCompleted(true);
         } else {
             event.setDropCompleted(false);
         }

@@ -1,5 +1,6 @@
 package ca.mv.projet.composants;
 
+import ca.mv.projet.models.pieces.Piece;
 import javafx.beans.binding.DoubleBinding;
 import javafx.beans.binding.DoubleExpression;
 import javafx.scene.image.Image;
@@ -10,6 +11,8 @@ import javafx.scene.input.TransferMode;
 
 
 public class PieceImage extends ImageView {
+
+    public Piece piece;
 
     public PieceImage(String imgUrl, DoubleBinding imageMargin) {
         creerImageView(imgUrl, imageMargin);
@@ -37,4 +40,8 @@ public class PieceImage extends ImageView {
                 super.toString() +
                 "}";
     }
+    public Piece getPiece() {
+        return piece;
+    }
+
 }
