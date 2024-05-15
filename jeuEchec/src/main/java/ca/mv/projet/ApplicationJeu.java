@@ -58,6 +58,24 @@ public class ApplicationJeu extends Application {
         label1.textProperty().bind(textFieldJoueur1.textProperty());
         label2.textProperty().bind(textFieldJoueur2.textProperty());
 
+        resetButton.setOnAction(event -> {            // Réinitialisation du jeu
+            jeu = new Jeu();
+            grille = new Grille(jeu);
+            grille.dessinerTuiles();
+            firstVBox.getChildren().remove(1); // Supprime l'ancienne grille
+            firstVBox.getChildren().add(grille.grid); // Ajoute la nouvelle grille
+
+            // Réinitialisation des noms des joueurs
+            textFieldJoueur1.clear();
+            textFieldJoueur2.clear();
+            label1.textProperty().unbind();
+            label2.textProperty().unbind();
+            label1.setText("Joueur 1");
+            label2.setText("Joueur 2");
+            label1.textProperty().bind(textFieldJoueur1.textProperty());
+            label2.textProperty().bind(textFieldJoueur2.textProperty());
+        });
+
 
         Scene scene = new Scene(root, Utilities.SCENE_WIDTH, Utilities.SCENE_HIEGHT);
         stage.setTitle("Jeu d'échec");
