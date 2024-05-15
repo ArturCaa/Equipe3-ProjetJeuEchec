@@ -1,9 +1,16 @@
 package ca.mv.projet.models;
 
-public class Joueur {
+import ca.mv.projet.composants.Tuile;
+import ca.mv.projet.models.pieces.Piece;
+
+public class Joueur{
     private String nom;
+    private boolean estBlanc;
+
+    public Piece piece;
 
     public Joueur(String nom){
+
         this.nom = nom;
     }
     public String getNom() {
@@ -12,4 +19,11 @@ public class Joueur {
     public void setNom(String nom) {
         this.nom = nom;
     }
+
+    public boolean isJoueurEstBlanc() {
+        return estBlanc;
+    }
+
+
+
 }
