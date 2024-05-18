@@ -86,19 +86,16 @@ public class Tuile extends StackPane {
         if (db.hasImage()) {
             Joueur playerActuel = jeu.joueurActuel();
             //La validation des tours des joueurs et les couleurs
-            //if ((playerActuel.isJoueurEstBlanc() && image.getPiece().isEstBlanc()) || (!playerActuel.isJoueurEstBlanc() && !image.getPiece().isEstBlanc())){
-                if (echiquier.estValidMouve(posSource, position)){
+            //if ((playerActuel.isJoueurEstBlanc() && image.getPiece().isEstBlanc()) || (!playerActuel.isJoueurEstBlanc() && !image.getPiece().isEstBlanc())) {
+                if (echiquier.estValidMouve(posSource, position)) {
                     echiquier.setCaseParPosition(posSource, position);
                     jeu.passerTour();
-                }
-                else {
+                } else {
                     System.out.println("Le mouvement est invalid");
                 }
-
-                if(this.getChildren().size()==2){
+                if (this.getChildren().size() == 2) {
                     PieceImage imageMangee = (PieceImage) this.getChildren().remove(1);
                 }
-
                 this.getChildren().add(image);
                 // TODO : appeler setCaseParPosition qui remplace le contenu de la case destination par celui de la case source
                 // et met la case source a une case vide
@@ -106,15 +103,13 @@ public class Tuile extends StackPane {
             } else {
                 event.setDropCompleted(false);
             }
-
-       /* } else {
+      /*  } else {
             event.setDropCompleted(false);
         }*/
-        event.consume();
+            event.consume();
     }
-
     @Override
-    public String toString() {
+    public String toString () {
         return "Tuile{" +
                 ", children= " + getChildren() +
                 "} " + super.toString();

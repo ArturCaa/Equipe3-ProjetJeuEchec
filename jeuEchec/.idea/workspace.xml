@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="5fb84cf3-6f34-46d8-af7e-3a7e54880778" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/mv/projet/ApplicationJeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/mv/projet/ApplicationJeu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ca/mv/projet/composants/Tuile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/mv/projet/composants/Tuile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/mv/projet/models/Joueur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/mv/projet/models/Joueur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/mv/projet/models/pieces/Fou.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/mv/projet/models/pieces/Fou.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/mv/projet/models/pieces/Reine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/mv/projet/models/pieces/Reine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/mv/projet/models/pieces/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/mv/projet/models/pieces/Tour.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "dev",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/arturca/Desktop/School/Session 4/Orienté objet/Orienté/Equipe3-ProjetJeuEchec/jeuEchec"
+    "last_opened_file_path": "C:/Users/Artur/Desktop/School/Session4/Oriente Objet/Final/Equipe3-ProjetJeuEchec/jeuEchec"
   }
 }]]></component>
   <component name="RunManager">

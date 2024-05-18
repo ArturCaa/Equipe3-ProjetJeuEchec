@@ -15,8 +15,7 @@ public class Tour extends Piece {
             bougerSurOrthogonal(posCourante, posDestination,echiquier);
             return true;
         }
-
-        System.out.println("peutBouger ne peut pas bouger");
+        System.out.println("La tour ne peut pas bouger");
         return false;
     }
 }

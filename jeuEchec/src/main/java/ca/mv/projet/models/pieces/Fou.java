@@ -21,7 +21,6 @@ public class Fou extends Piece {
         return false;
     }
 
-
     public boolean estSurDiagonal(Position posCourante, Position posDestination){
         // TODO : à tester
         int diffSurX = posDestination.getX() - posCourante.getX();

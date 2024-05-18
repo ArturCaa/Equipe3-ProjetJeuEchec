@@ -16,8 +16,6 @@ public class Reine extends Piece {
             bougerSurOrthogonal(posCourante, posDestination, echiquier);
             return true;
         }
-
-
         System.out.println("La reine ne peut pas bouger");
         return false;
     }

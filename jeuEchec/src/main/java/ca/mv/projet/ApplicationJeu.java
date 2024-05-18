@@ -65,7 +65,6 @@ public class ApplicationJeu extends Application {
             firstVBox.getChildren().remove(1); // Supprime l'ancienne grille
             firstVBox.getChildren().add(grille.grid); // Ajoute la nouvelle grille
 
-            // Réinitialisation des noms des joueurs
             textFieldJoueur1.clear();
             textFieldJoueur2.clear();
             label1.textProperty().unbind();
@@ -87,22 +86,18 @@ public class ApplicationJeu extends Application {
     public static void main(String[] args) {
         Echiquier echiquier = new Echiquier();
 
-        // Position de départ et d'arrivée pour tester la tour
         Position posCourante = new Position(0, 0); // Position de départ
         Position posDestination = new Position(0,1 ); // Position d'arrivée
 
-        // Création d'une tour
         Roi roi = new Roi(true); // Tour blanche
 
-        // Appel de la méthode peutBouger pour la tour
         boolean peutBouger = roi.peutBouger(posCourante, posDestination, echiquier);
 
-        // Affichage du résultat
-        if (peutBouger) {
+       /* if (peutBouger) {
             System.out.println("Le roi peut bouger sur la case de destination.");
         } else {
             System.out.println("La roi ne peut pas bouger sur la case de destination.");
-        }
+        }*/
 
         launch();
     }
