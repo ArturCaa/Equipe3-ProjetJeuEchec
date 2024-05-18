@@ -5,7 +5,9 @@ import ca.mv.projet.models.pieces.Piece;
 
 public class Joueur{
     private String nom;
-    private boolean estBlanc;
+
+    Piece piece;
+    public boolean estBlanc;
     
     public Joueur(String nom){
 
